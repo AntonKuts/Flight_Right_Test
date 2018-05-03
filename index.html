@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Flyends by Flight Right Test Task by Anton Kuts</title>
+    <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+  <body>
+    <div class="container">
+
+      <header>
+        <h1>Flight Right Test Task by Anton Kuts</h1>
+      </header>
+
+
+      <div class="blue-path">
+        <div class="stop-train" id="station-1">
+          <p>1</p>
+        </div>
+        <div class="stop-train" id="station-2">
+          <p>2</p>
+        </div>
+        <div class="stop-train">
+        </div>
+        <div class="stop-train" id="station-4">
+          <p>4</p>
+        </div>
+        <div class="stop-train">
+        </div>
+        <div class="stop-train" id="station-6">
+          <p>6</p>
+        </div>
+        <div class="stop-train" id="station-7">
+          <p>7</p>
+        </div>
+      </div>
+
+      <div class="blue-path green-path">
+        <div class="stop-train stop-train-rotate-1" id="station-14">
+          <p>14</p>
+        </div>
+        <div class="stop-train stop-train-rotate-1" id="station-15">
+          <p>15</p>
+        </div>
+        <div class="stop-train stop-train-rotate-1" id="station-AC">
+          <p>AC</p>
+        </div>
+        <div class="stop-train stop-train-rotate-1">
+        </div>
+        <div class="stop-train stop-train-rotate-1" id="station-18">
+          <p>18</p>
+        </div>
+        <div class="stop-train stop-train-rotate-1" id="station-19">
+          <p>19</p>
+        </div>
+      </div>
+
+      <div class="blue-path red-path">
+        <div class="stop-train stop-train-rotate-2" id="station-8">
+          <p>8</p>
+        </div>
+        <div class="stop-train stop-train-rotate-2" id="station-9">
+          <p>9</p>
+        </div>
+        <div class="stop-train stop-train-rotate-2" id="station-BC">
+          <p>BC</p>
+        </div>
+        <div class="stop-train stop-train-rotate-2" id="station-AB">
+          <p>AB</p>
+        </div>
+        <div class="stop-train stop-train-rotate-2" id="station-12">
+          <p>12</p>
+        </div>
+        <div class="stop-train stop-train-rotate-2" id="station-13">
+          <p>13</p>
+        </div>
+      </div>
+
+      <div class="main-box">
+
+        <div class="box">
+          <h5 class="blue-underline">Blue train:</h5>
+          <div class="row">
+            <div class="input-field col s6">
+             <select id="Blue-train-station">
+               <option value="" selected>Select station</option>
+               <option value="1">1</option>
+               <option value="2">2</option>
+               <option value="AC">AC</option>
+               <option value="4">4</option>
+               <option value="AB">AB</option>
+               <option value="6">6</option>
+               <option value="7">7</option>
+             </select>
+             <label>Station:</label>
+            </div>
+            <div class="input-field col s6">
+              <input id="People-blue-train" type="number" class="validate" max="800" min="1">
+              <label for="People-blue-train">Number of people</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <h5 class="red-underline">Red train:</h5>
+          <div class="row">
+            <div class="input-field col s6">
+             <select id="Red-train-station">
+               <option value="" selected>Select station</option>
+               <option value="8">8</option>
+               <option value="9">9</option>
+               <option value="BC">BC</option>
+               <option value="AB">AB</option>
+               <option value="12">12</option>
+               <option value="13">13</option>
+             </select>
+             <label>Station:</label>
+            </div>
+            <div class="input-field col s6">
+              <input id="People-red-train" type="number" class="validate" max="800" min="1">
+              <label for="People-red-train">Number of people</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <h5 class="green-underline">Green train:</h5>
+          <div class="row">
+            <div class="input-field col s6">
+             <select id="Green-train-station">
+               <option value="" selected>Select station</option>
+               <option value="14">14</option>
+               <option value="15">15</option>
+               <option value="AC">AC</option>
+               <option value="AB">AB</option>
+               <option value="18">18</option>
+               <option value="19">19</option>
+             </select>
+             <label>Station:</label>
+            </div>
+            <div class="input-field col s6">
+              <input id="People-green-train" type="number" class="validate" max="800" min="1">
+              <label for="People-green-train">Number of people</label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="btn-box">
+        <a class="waves-effect waves-light btn" id="Start" onclick="Start()">Start</a>
+        <a class="waves-effect waves-light btn" id="NextStap" onclick="NextStap()" disabled="disabled">Next stap</a>
+      </div>
+      <h5 class="ForA">A</h5>
+      <h5 class="ForB">B</h5>
+      <h5 class="ForC">C</h5>
+    </div>
+
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/materialize.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script> -->
+    <script src="js/js.js" charset="utf-8"></script>
+  </body>
+</html>

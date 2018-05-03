@@ -1,0 +1,137 @@
+h1 {
+  font-size: 32px;
+  margin-left: 100px;
+  margin-bottom: 0;
+}
+
+p{
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  height:750px;
+  overflow: hidden;
+}
+
+.blue-path {
+  height: 5px;
+  width: 900px;
+  border: 1px solid black;
+  margin-top: 200px;
+  margin-bottom: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: blue;
+}
+
+.stop-train {
+  height: 35px;
+  width: 35px;
+  border: 1px solid black;
+  border-radius: 50px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.stop-train-rotate-1{
+  -moz-transform: rotate(-20deg); /* Для Firefox */
+  -ms-transform: rotate(-20deg); /* Для IE */
+  -webkit-transform: rotate(-20deg); /* Для Safari, Chrome, iOS */
+  -o-transform: rotate(-20deg); /* Для Opera */
+  transform: rotate(-20deg);
+}
+
+.stop-train-rotate-2{
+  -moz-transform: rotate(19deg); /* Для Firefox */
+  -ms-transform: rotate(19deg); /* Для IE */
+  -webkit-transform: rotate(19deg); /* Для Safari, Chrome, iOS */
+  -o-transform: rotate(19deg); /* Для Opera */
+  transform: rotate(19deg);
+}
+
+.green-path {
+  width: 800px;
+  -moz-transform: rotate(19deg); /* Для Firefox */
+  -ms-transform: rotate(19deg); /* Для IE */
+  -webkit-transform: rotate(19deg); /* Для Safari, Chrome, iOS */
+  -o-transform: rotate(19deg); /* Для Opera */
+  transform: rotate(19deg);
+  position: relative;
+  bottom: 179px;
+  right: 21px;
+  background-color: green;
+}
+
+.red-path {
+  width: 800px;
+  -moz-transform: rotate(-20deg); /* Для Firefox */
+  -ms-transform: rotate(-20deg); /* Для IE */
+  -webkit-transform: rotate(-20deg); /* Для Safari, Chrome, iOS */
+  -o-transform: rotate(-20deg); /* Для Opera */
+  transform: rotate(-20deg);
+  position: relative;
+  bottom: 385px;
+  left: 123px;
+  background-color: red;
+}
+
+.blue-underline{
+  width: 130px;
+  border-bottom: 2px solid blue;
+}
+
+.red-underline{
+  width: 130px;
+  border-bottom: 2px solid red;
+}
+
+.green-underline{
+  width: 130px;
+  border-bottom: 2px solid green;
+}
+
+.main-box{
+  position: relative;
+  bottom: 390px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box{
+  width: 31%;
+  height: auto;
+}
+
+.btn-box{
+  position: relative;
+  bottom: 400px;
+}
+
+.ForA{
+  font-size: 32px;
+  position: relative;
+  bottom: 869px;
+}
+
+.ForB{
+  font-size: 32px;
+  position: relative;
+  bottom: 755px;
+  left: 135px;
+}
+
+.ForC{
+  font-size: 32px;
+  position: relative;
+  bottom: 1064px;
+}
